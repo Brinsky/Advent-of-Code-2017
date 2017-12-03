@@ -1,0 +1,3 @@
+Completed solutions to the 2017 Advent of Code challenges (http://adventofcode.com/2017).
+
+All solutions are written in Java and should be compliant with Java 1.8 and above. Input files are provided.
