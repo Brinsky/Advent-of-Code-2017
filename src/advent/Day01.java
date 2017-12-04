@@ -1,4 +1,5 @@
 package advent;
+
 import java.io.IOException;
 
 public class Day01 {
