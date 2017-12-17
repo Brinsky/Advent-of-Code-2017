@@ -11,7 +11,8 @@ public class Day04 {
 		String[][] words = parseWords(FileUtility.fileToString("input/04.txt"));
 
 		// Part one
-		FileUtility.printAndOutput(linesWithoutRepeats(words, (String word) -> word), "output/04A.txt");
+		FileUtility.printAndOutput(
+				linesWithoutRepeats(words, (String word) -> word), "output/04A.txt");
 		
 		// Part two
 		FileUtility.printAndOutput(linesWithoutRepeats(words, sortChars), "output/04B.txt");	

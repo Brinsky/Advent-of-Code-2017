@@ -20,7 +20,7 @@ public class Day10 {
 		FileUtility.printAndOutput(knotHash(input), "output/10B.txt");
 	}
 
-	public static int[] parseLengths(String input) {
+	private static int[] parseLengths(String input) {
 		String[] numbers = input.split(",\\s*");
 		int[] lengths = new int[numbers.length];
 		
@@ -31,7 +31,7 @@ public class Day10 {
 		return lengths;
 	}
 	
-	public static int[] asciiLengths(String input) {
+	private static int[] asciiLengths(String input) {
 		int[] lengths = new int[input.length() + TRAILING_LENGTHS.length];
 		for (int i = 0; i < input.length(); i++) {
 			lengths[i] = (int) input.charAt(i);
@@ -43,7 +43,7 @@ public class Day10 {
 		return lengths;
 	}
 	
-	public static int[] getList() {
+	private static int[] getList() {
 		int[] list = new int[LIST_SIZE];
 		
 		for (int i = 0; i < list.length; i++) {
@@ -53,7 +53,7 @@ public class Day10 {
 		return list;
 	}
 	
-	public static void reverseSublist(int[] list, int start, int length) {
+	private static void reverseSublist(int[] list, int start, int length) {
 		for (int i = 0; i < length / 2; i++) {
 			int first = (start + i) % list.length;
 			int last = (start + length - 1 - i) % list.length;
@@ -69,7 +69,7 @@ public class Day10 {
 		public int skipSize = 0;
 	}
 	
-	public static int applyReversals(int[] list, int[] lengths, HashingState state) {
+	private static int applyReversals(int[] list, int[] lengths, HashingState state) {
 		for (int length : lengths) {
 			reverseSublist(list, state.currentPosition, length);
 			state.currentPosition += length + state.skipSize;
