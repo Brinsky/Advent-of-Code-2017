@@ -12,7 +12,7 @@ public class Day04 {
 
 		// Part one
 		FileUtility.printAndOutput(
-				linesWithoutRepeats(words, (String word) -> word), "output/04A.txt");
+				linesWithoutRepeats(words, word -> word), "output/04A.txt");
 		
 		// Part two
 		FileUtility.printAndOutput(linesWithoutRepeats(words, sortChars), "output/04B.txt");	
@@ -23,7 +23,7 @@ public class Day04 {
 		public String transformWord(String word);
 	}
 	
-	private static WordTransform sortChars = (String word) -> {
+	private static WordTransform sortChars = word -> {
 		char[] chars = word.toCharArray();
 		Arrays.sort(chars);
 		return new String(chars);

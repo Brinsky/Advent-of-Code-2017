@@ -11,11 +11,11 @@ public class Day05 {
 		// Part one
 		FileUtility.printAndOutput(
 				stepsToEscape(Arrays.copyOf(jumps, jumps.length),
-						(int i) -> 1), "output/05A.txt");
+						i -> 1), "output/05A.txt");
 		
 		// Part two
 		FileUtility.printAndOutput(stepsToEscape(jumps,
-				(int i) -> (i >= 3) ? -1 : 1), "output/05B.txt");
+				i -> (i >= 3) ? -1 : 1), "output/05B.txt");
 	}
 
 	private static int[] parse(String input) {
