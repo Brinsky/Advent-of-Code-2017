@@ -6,7 +6,7 @@ import java.util.Arrays;
 public class Day05 {
 
 	public static void main(String[] args) throws IOException {
-		int[] jumps = parse(FileUtility.textFileToString("input/05.txt"));
+		int[] jumps = parse(FileUtility.fileToString("input/05.txt"));
 		
 		// Part one
 		FileUtility.printAndOutput(

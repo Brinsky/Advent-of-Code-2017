@@ -7,7 +7,7 @@ import java.util.Map;
 public class Day07 {
 
 	public static void main(String[] args) throws IOException {
-		Program root = parse(FileUtility.textFileToString("input/07.txt"));
+		Program root = parse(FileUtility.fileToString("input/07.txt"));
 		
 		// Part one
 		FileUtility.printAndOutput(root.name, "output/07A.txt");

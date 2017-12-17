@@ -8,7 +8,7 @@ import java.util.Set;
 public class Day04 {
 
 	public static void main(String[] args) throws IOException {
-		String[][] words = parseWords(FileUtility.textFileToString("input/04.txt"));
+		String[][] words = parseWords(FileUtility.fileToString("input/04.txt"));
 
 		// Part one
 		FileUtility.printAndOutput(linesWithoutRepeats(words, (String word) -> word), "output/04A.txt");

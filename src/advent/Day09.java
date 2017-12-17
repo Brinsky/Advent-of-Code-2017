@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Day09 {
 
 	public static void main(String[] args) throws IOException {
-		String stream = FileUtility.textFileToString("input/09.txt");
+		String stream = FileUtility.fileToString("input/09.txt");
 		StreamInfo info = wade(stream);
 		
 		// Part one

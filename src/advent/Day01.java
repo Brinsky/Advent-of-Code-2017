@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Day01 {
 
 	public static void main(String[] args) throws IOException {
-		int[] digits = getDigits(FileUtility.textFileToString("input/01.txt"));
+		int[] digits = getDigits(FileUtility.fileToString("input/01.txt"));
 		
 		// Part one
 		FileUtility.printAndOutput(sumRepeated(digits, 1), "output/01A.txt");

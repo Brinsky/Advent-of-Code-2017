@@ -7,7 +7,7 @@ import java.util.Map;
 public class Day08 {
 
 	public static void main(String[] args) throws IOException {
-		Instruction[] instructions = parse(FileUtility.textFileToString("input/08.txt"));
+		Instruction[] instructions = parse(FileUtility.fileToString("input/08.txt"));
 		Map<String, Integer> registers = new HashMap<String, Integer>();
 		
 		int maxSeen = process(registers, instructions);

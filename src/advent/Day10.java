@@ -10,7 +10,7 @@ public class Day10 {
 	private static final int BLOCK_SIZE = 16;
 	
 	public static void main(String[] args) throws IOException {
-		String input = FileUtility.textFileToString("input/10.txt");
+		String input = FileUtility.fileToString("input/10.txt");
 		
 		// Part one
 		int product = applyReversals(getList(), parseLengths(input), new HashingState());

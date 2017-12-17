@@ -7,7 +7,7 @@ import java.util.List;
 public class Day03 {
 
 	public static void main(String[] args) throws IOException {
-		int address = Integer.parseInt(FileUtility.textFileToString("input/03.txt"));
+		int address = Integer.parseInt(FileUtility.fileToString("input/03.txt"));
 		
 		// Part one
 		FileUtility.printAndOutput(locate(address).magnitude(), "output/03A.txt");

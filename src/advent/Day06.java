@@ -11,7 +11,7 @@ public class Day06 {
 	private static final int NUM_BANKS = 16;
 
 	public static void main(String[] args) throws IOException {
-		int[] banks = parse(FileUtility.textFileToString("input/06.txt"));
+		int[] banks = parse(FileUtility.fileToString("input/06.txt"));
 		
 		CycleData cycles = performCycles(banks);
 		

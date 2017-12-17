@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Day02 {
 
 	public static void main(String[] args) throws IOException {
-		int[][] cells = parseSpreadsheet(FileUtility.textFileToString("input/02.txt"));
+		int[][] cells = parseSpreadsheet(FileUtility.fileToString("input/02.txt"));
 		
 		// Part one
 		FileUtility.printAndOutput(maxMinChecksum(cells), "output/02A.txt");
