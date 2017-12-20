@@ -187,6 +187,7 @@ public class Day16 {
 		return output;
 	}
 	
+	/** Performs the name swaps described by the first array on the second array */
 	private static int[] performPartnerMoves(int[] partnerMoves, int[] dancers) {
 		int[] output = new int[dancers.length];
 		
