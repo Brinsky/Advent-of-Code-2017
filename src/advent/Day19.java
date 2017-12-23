@@ -44,7 +44,7 @@ public class Day19 {
 		}
 	}
 	
-	private enum Heading {
+	public enum Heading {
 		NORTH(-1, 0),
 		EAST(0, 1),
 		SOUTH(1, 0),
@@ -74,6 +74,16 @@ public class Day19 {
 			case EAST: return NORTH;
 			case SOUTH: return EAST;
 			case WEST: return SOUTH;
+			default: return null;
+			}
+		}
+		
+		public Heading getOppositeHeading() {
+			switch (this) {
+			case NORTH: return SOUTH;
+			case EAST: return WEST;
+			case SOUTH: return NORTH;
+			case WEST: return EAST;
 			default: return null;
 			}
 		}

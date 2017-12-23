@@ -95,12 +95,11 @@ public class Day18 {
 		}
 		
 		public long get(int register) {
-			if (registers.containsKey(register)) {
-				return registers.get(register);
-			} else {
+			if (!registers.containsKey(register)) {
 				registers.put(register, 0L);
-				return 0;
 			}
+			
+			return registers.get(register);
 		}
 	}
 	
