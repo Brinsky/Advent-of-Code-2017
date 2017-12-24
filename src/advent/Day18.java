@@ -22,7 +22,7 @@ public class Day18 {
 		return (int) (c - 'a');
 	}
 	
-	private static class Operation {
+	public static class Operation {
 		public final String type;
 		
 		private final int[] values;
@@ -74,7 +74,7 @@ public class Day18 {
 		}
 	}
 	
-	private static Operation[] parse(String input) {
+	public static Operation[] parse(String input) {
 		String[] lines = input.split("\n");
 		Operation[] ops = new Operation[lines.length];
 		
@@ -87,7 +87,7 @@ public class Day18 {
 		return ops;
 	}
 	
-	private static class Registers {
+	public static class Registers {
 		private final Map<Integer, Long> registers = new HashMap<Integer, Long>(27);
 		
 		public void put(int register, long value) {
